@@ -152,10 +152,11 @@ In the last two lines we load our user environment into the virtual machine of t
 When we startup our console project we are met by the following window:
 ![](http://i.imgur.com/7EIzqXp.png)
 
-We can then invoke our createuser command using: **createuser email:"fake@ema.il" password:"somepassword" role:"admin"**.
+We can then invoke our createuser command using: ```createuser email:"fake@ema.il" password:"somepassword" role:"admin"```.
 
-In the following screenshow we have invoked our command. 
+In the following screenshot we have invoked our command. 
 ![](http://i.imgur.com/SBXqpgI.png)
+
 As you may notice, we've left our the role argument as we defined this to be optional, and we used 'p' instead of 'password' as we defined this as an alias to the password argumentname. 
 
 In fact this command could be invoked in many different ways. We don't even HAVE to specifically write the argument names, as long as we pass the arguments in the order defined in the command-template. The purpose of specifically writing the argument names is that we can write the arguments in any order. 
