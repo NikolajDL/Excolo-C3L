@@ -172,3 +172,11 @@ createuser "email@test.ts" thisispass11
 That's it for this tutorial.
 
 Once the example project is ready, it will present more different use-cases, such as the catch-all argument, etc.
+
+
+
+License
+============
+Free for both personal and commercial use.
+
+Copyright (c) 2014 Nikolaj Dam Larsen. Released under the [MITlicense](https://github.com/Excolo/Excolo-C3L/blob/master/LICENSE).
