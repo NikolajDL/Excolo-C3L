@@ -1,0 +1,15 @@
+﻿program-seq	::= command (; command)*
+command		::= command-name argument*
+argument	::= value | argument-name:value
+value		::= string | word | integer | bool | real
+string		::= "word" | 'word'
+argument-name	::= word
+command-name	::= word
+
+real		::= (sign)digit*.integer
+integer		::= (sign)digit(digit)* 
+sign		::= - | 
+bool		::= true | false | True | False
+word		::= (letter | _ | -)(letter | digit | _ | -)*
+letter		::= [a-z] | [A-Z]
+digit		::= [0-9]

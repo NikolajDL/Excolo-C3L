@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excolo.C3L", "Excolo.C3L\Excolo.C3L.csproj", "{8375EEE7-FC0D-4CF9-AEAC-695A2D2673D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excolo.C3L.Tests", "Excolo.C3L.Tests\Excolo.C3L.Tests.csproj", "{8D6568F0-482C-41F0-ADD4-233A576DDD0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excolo.C3L.Console", "Excolo.C3L.Console\Excolo.C3L.Console.csproj", "{82309FCB-96F6-4855-A420-4B126A013833}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://excolo.ktadata.com:8080/tfs/excolosolution
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Excolo.C3L\\Excolo.C3L.csproj
+		SccProjectName1 = Excolo.C3L
+		SccLocalPath1 = Excolo.C3L
+		SccProjectUniqueName2 = Excolo.C3L.Tests\\Excolo.C3L.Tests.csproj
+		SccProjectName2 = Excolo.C3L.Tests
+		SccLocalPath2 = Excolo.C3L.Tests
+		SccProjectUniqueName3 = Excolo.C3L.Console\\Excolo.C3L.Console.csproj
+		SccProjectName3 = Excolo.C3L.Console
+		SccLocalPath3 = Excolo.C3L.Console
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8375EEE7-FC0D-4CF9-AEAC-695A2D2673D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8375EEE7-FC0D-4CF9-AEAC-695A2D2673D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8375EEE7-FC0D-4CF9-AEAC-695A2D2673D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8375EEE7-FC0D-4CF9-AEAC-695A2D2673D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6568F0-482C-41F0-ADD4-233A576DDD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6568F0-482C-41F0-ADD4-233A576DDD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6568F0-482C-41F0-ADD4-233A576DDD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6568F0-482C-41F0-ADD4-233A576DDD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82309FCB-96F6-4855-A420-4B126A013833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82309FCB-96F6-4855-A420-4B126A013833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82309FCB-96F6-4855-A420-4B126A013833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82309FCB-96F6-4855-A420-4B126A013833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

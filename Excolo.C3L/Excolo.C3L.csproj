@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8375EEE7-FC0D-4CF9-AEAC-695A2D2673D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Excolo.C3L</RootNamespace>
+    <AssemblyName>Excolo.C3L</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\ValueArgument.cs" />
+    <Compile Include="Environments\BaseEnvironment.cs" />
+    <Compile Include="Environments\IOEnvironment.cs" />
+    <Compile Include="Environments\SystemEnvironment.cs" />
+    <Compile Include="Exceptions\ArgumentException.cs" />
+    <Compile Include="Exceptions\ExitShellException.cs" />
+    <Compile Include="Exceptions\IllegalCharacterException.cs" />
+    <Compile Include="Exceptions\IllegalTokenException.cs" />
+    <Compile Include="Exceptions\MalformedTokenException.cs" />
+    <Compile Include="Exceptions\ParserException.cs" />
+    <Compile Include="Exceptions\ScannerException.cs" />
+    <Compile Include="Exceptions\ShellException.cs" />
+    <Compile Include="Exceptions\UnknownCharacterException.cs" />
+    <Compile Include="Exceptions\UnknownCommandException.cs" />
+    <Compile Include="Exceptions\VirtualMachineException.cs" />
+    <Compile Include="Executer\ArgumentTemplateSegment.cs" />
+    <Compile Include="Executer\ArgumentValueDictionary.cs" />
+    <Compile Include="Executer\ArgumentValueLookup.cs" />
+    <Compile Include="Executer\CommandBindData.cs" />
+    <Compile Include="Executer\CommandMatchResult.cs" />
+    <Compile Include="Executer\Resolver.cs" />
+    <Compile Include="Executer\Shell.cs" />
+    <Compile Include="Executer\VirtualMachine.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Interfaces\AST\IArgument.cs" />
+    <Compile Include="Interfaces\AST\IArgumentSequence.cs" />
+    <Compile Include="Interfaces\AST\ICommand.cs" />
+    <Compile Include="Interfaces\AST\IProgramSequence.cs" />
+    <Compile Include="Interfaces\IEnvironment.cs" />
+    <Compile Include="Interfaces\IScanner.cs" />
+    <Compile Include="Interfaces\IShellParser.cs" />
+    <Compile Include="Interfaces\IVirtualMachine.cs" />
+    <Compile Include="Interfaces\IVisitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyntaxAnalysis\AST\Argument.cs" />
+    <Compile Include="SyntaxAnalysis\AST\ArgumentSequence.cs" />
+    <Compile Include="SyntaxAnalysis\AST\ArgumentSequenceEmpty.cs" />
+    <Compile Include="SyntaxAnalysis\AST\BaseAST.cs" />
+    <Compile Include="SyntaxAnalysis\AST\Command.cs" />
+    <Compile Include="SyntaxAnalysis\AST\ProgramSequence.cs" />
+    <Compile Include="SyntaxAnalysis\AST\ProgramSequenceEmpty.cs" />
+    <Compile Include="SyntaxAnalysis\Parsing\Parser.cs" />
+    <Compile Include="SyntaxAnalysis\Scanning\Scanner.cs" />
+    <Compile Include="SyntaxAnalysis\Scanning\Token.cs" />
+    <Compile Include="SyntaxAnalysis\Scanning\TokenKind.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EBNF.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
